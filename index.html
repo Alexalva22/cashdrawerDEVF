@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>RS Bank</title>
+  </head>
+  <body>
+    <div class="masterContainer">
+      <div class="containerLogin " id="none">
+        <div class="left">
+          <h2>LOGIN</h2>
+          <p>Introduce tus datos de acceso</p>
+          <label for="">Correo electronico </label>
+          <input type="text" id="user" placeholder="ejemplo@gmail.com" />
+          <label for="">Contraseña</label>
+          <input type="password" id="password" />
+          <button id="loginButton">Ingresar</button>
+          <span id="error"></span>
+        </div>
+        <div class="right">
+          <h1>RS BANK</h1>
+          <img src="assets/logo.png" alt="" />
+        </div>
+      </div>
+
+      <div class="operations none" id="outNone">
+        <div class="top">
+          <img src="assets/logo.png" alt="">
+          RS BANK
+        </div>
+        <div class="depositWithdraw">
+          <div class="leftBottom">
+            <div class="cardDeposit">
+              <h3>Depositos</h3>
+              <label for="">Ingresa la cantidad a depositar</label>
+              <input type="number" id="deposit" placeholder="0000">
+              <button onclick="deposit()">Depositar</button>
+            </div>
+            <span id="dwError"></span>
+            <div class="cardWithdraw">
+              <h3>Retiros</h3>
+              <label for="">Ingresa la cantidad a retirar</label>
+            <input type="number" id="withdraw" placeholder="0000">
+            <button onclick="withdraw()">Retirar</button>
+            </div>
+          </div>
+          <div class="rightBottom">
+            <h3>Datos del beneficiario</h3>
+            <span id="name"></span>
+            <span id="printUser"></span>
+            <span id="cardNumber">Tarjeta: 8754-7682-7451-1248</span>
+            <span id="defeat"></span>
+            <p> Tu saldo es de <span id="cash"> pesos mexicanos</span></p>
+
+          <button id="logout" onclick="logout()">Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Code+Pro:wght@200;500&display=swap");
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+body {
+  margin: 0;
+}
+
+.none{
+  display: none !important;
+}
+/* LOGIN */
+
+.containerLogin {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  font-family: "Source Code Pro", monospace;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.left h2 {
+  font-size: 2rem;
+}
+.left p {
+  font-weight: 200;
+}
+.left input {
+  height: 2rem;
+  width: 18rem;
+  border-radius: 0.5rem;
+}
+.left label {
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  color: grey;
+}
+
+.left button {
+  margin: 2rem;
+  height: 2rem;
+  width: 10rem;
+  background-color: #5bc0be;
+  border-style: none;
+  border-radius: 0.6rem;
+  font-family: "Source Code Pro", monospace;
+  cursor: grab;
+}
+#error{
+  color: red;
+}
+.right {
+  background-image: url(patternpad.jpeg);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.right h1 {
+  font-size: 3rem;
+}
+.right img {
+  width: 14rem;
+}
+
+/* OPERACIONES BANCARIAS */
+.operations{
+  background-image: url(blurry-gradient-haikei.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* background-color: #0b132b; */
+
+}
+.top{
+  height: 20%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  font-size: 3.3rem;
+}
+.top img{
+  height: 9rem;
+}
+.depositWithdraw{
+  width: 100%;
+  /* background-color: aqua; */
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  
+}
+.leftBottom{
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+  height: 100%;
+  width: 50%;
+}
+.cardDeposit, .cardWithdraw{
+  font-family: "Source Code Pro", monospace;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  height: 12rem;
+  width: 19rem;
+  background: rgba( 235, 240, 240, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7px );
+-webkit-backdrop-filter: blur( 7px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.leftBottom h3{
+  font-size: 2rem;
+  margin: 0;
+}
+.leftBottom label{
+  color: gold;
+  margin: 1rem;
+  text-align: center;
+}
+.leftBottom input{
+  height: 2rem;
+  width: 8rem;
+  border-style: none;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+.leftBottom button{
+  background-color: #6fffe9;
+  border-style: none;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 1rem;
+  font-family: "Source Code Pro", monospace;
+  cursor: grab;
+}
+.leftBottom span{
+  color: rgb(255, 251, 7);
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: "Source Code Pro", monospace;
+}
+.rightBottom{
+  text-align: center;
+  height: 90%;
+  width: 48%;
+color: rgb(255, 255, 255);
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+font-family: "Source Code Pro", monospace;  
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.2px);
+-webkit-backdrop-filter: blur(5.2px);
+border: 1px solid rgba(255, 255, 255, 0.23);
+}
+.rightBottom h3{
+  font-size: 3rem;
+  margin: 0;
+}
+.rightBottom span{
+  font-size: 1.5rem;
+}
+.rightBottom p{
+font-size: 1.5rem;
+}
+#cash{
+  color: black;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+#logout{
+  height: 2rem;
+  background-color: red;
+  color: white;
+  width: 7rem;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.5rem;
+  border-style: none;
+  border-radius: 1rem;
+  cursor: grab;
+
+}
+
+/* MEDIA QUERY DE TELEFONO */
+
